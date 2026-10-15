@@ -36,5 +36,4 @@ jobs:
             docker pull petergamez/ci-cd-pipeline:latest
             docker stop my-react-app || true
             docker rm my-react-app || true
-            docker run -d --name my-react-app -p 80:80
-            petergamez/ci-cd-pipeline:latest
+            docker run -d --name my-react-app -p 80:80 petergamez/ci-cd-pipeline:latest
